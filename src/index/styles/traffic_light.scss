@@ -1,0 +1,65 @@
+body {
+  height: 600px;
+  background-image: radial-gradient(gray, transparent);
+}
+.wrapper {
+  width: 15%;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  top: 25%;
+  text-align: center;
+  background-color: #222;
+  border-radius: 10px;
+}
+
+.toggle_button{
+  display: inline-block;
+  margin: 10px 0;
+  background-color: #4eff2d;
+  background-image: radial-gradient(#4eff2d, transparent);
+  box-shadow: 0 0 20px #111 inset, 0 0 10px #4eff2d;
+  border: none;
+
+  &:hover {
+    box-shadow: 0 0 30px #111 inset, 0 0 10px #FFF;
+  }
+}
+.circles{
+  border-radius:50%;
+  width: 75px;
+  height: 75px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+.traffic_light {
+  width: 30%;
+  margin: 0 auto;
+}
+.red {
+  @extend .circles;
+  background-color: red;
+  background-image: radial-gradient(red, transparent);
+  box-shadow: 0 0 20px #111 inset, 0 0 10px red;
+}
+
+.yellow {
+  @extend .circles;
+  background-color: yellow;
+  background-image: radial-gradient(yellow, transparent);
+  box-shadow: 0 0 20px #111 inset, 0 0 10px yellow;
+  }
+
+.green {
+  @extend .circles;
+  background-color: green;
+  background-image: radial-gradient(lime, transparent);
+  box-shadow: 0 0 20px #111 inset, 0 0 10px lime;
+}
+
+.disable {
+  background-color: gray;
+  background-image: radial-gradient(gray, transparent);
+  box-shadow: 0 0 20px #111 inset, 0 0 10px gray;
+  transition: 0.5s;
+}
